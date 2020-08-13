@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+  <title>Recipie Search Api</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4 text-center">Recipie Search App</h1>
+      <p class="lead text-center">Search for recipies easily by just adding for any food item</p>
+      <hr class="my-4">
+      <p class="text-center">Input any food Item you want and get recipies connected to that item</p>
+      <form>
+        <div class="form-row">
+          <div class="col-7">
+            <input type="text" id="item" class="form-control" placeholder="Food Item" required>
+          </div>
+          <div class="col">
+            <input type="text" id="number" class="form-control" placeholder="Number of recipies" required>
+          </div>
+          <div class="col">
+            <button type="submit" id="button" class="btn btn-primary">Request</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container" id="output"></div>
+</body>
+<script src="app.js"></script>
+</html>
